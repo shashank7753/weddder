@@ -82,12 +82,7 @@ Follow these simple steps to run the project locally:
    
 🥳Viola! Project starts running at `localhost:3000`
 
-## Screenshots
-![Landing page](https://user-images.githubusercontent.com/60403638/83971127-2aff8a00-a8f7-11ea-8cc6-f5205cc4d25b.jpg)
 
-![SignIn Page](https://user-images.githubusercontent.com/60403638/83971151-5aae9200-a8f7-11ea-91da-c364f9c73a5f.jpg)
-
-![Checkout page](https://user-images.githubusercontent.com/60403638/83971158-69954480-a8f7-11ea-9d5e-ec90cab6736b.jpg)
 
 
 ## Work In Progress
