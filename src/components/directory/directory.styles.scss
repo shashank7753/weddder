@@ -1,6 +1,29 @@
+// .directory-menu {
+//   width: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
 .directory-menu {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* Optional: Add styling to individual directory items */
+.directory-item {
+  width: calc(33.33% - 10px); /* Adjusted width to fit three items in a row with spacing */
+  margin-bottom: 20px; /* Added margin bottom for spacing between rows */
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for smooth hover effects */
+  border-radius: 8px; /* Adding border radius for rounded corners */
+  overflow: hidden; /* Hide overflow content */
+
+  &:hover {
+    transform: translateY(-5px); /* Move the directory item up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+
+  /* Add more styling to customize the appearance of directory items */
 }

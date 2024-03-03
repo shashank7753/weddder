@@ -13,3 +13,35 @@
     justify-content: space-between;
   }
 }
+// .collection-preview {
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 30px;
+//   border-bottom: 1px solid #ddd; /* Adding border for visual separation */
+
+//   .title {
+//     font-size: 24px; /* Adjusted font size for better readability */
+//     font-weight: bold; /* Added font weight for emphasis */
+//     margin-bottom: 20px; /* Reduced margin for better spacing */
+//     color: #333; /* Changed color for better contrast */
+//   }
+
+//   .preview {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Using CSS grid for flexible layout */
+//     grid-gap: 20px; /* Added gap between items for better spacing */
+//   }
+  
+//   /* Optional: Add styling to individual collection items */
+//   .collection-item {
+//     border: 1px solid #ddd; /* Adding border for visual separation */
+//     border-radius: 8px; /* Adding border radius for rounded corners */
+//     overflow: hidden; /* Hide overflow content */
+//     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effects */
+
+//     &:hover {
+//       transform: translateY(-5px); /* Move the collection item up slightly on hover */
+//       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+//     }
+//   }
+// }
