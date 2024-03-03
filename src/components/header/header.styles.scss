@@ -1,69 +1,42 @@
-// .header {
-//   height: 70px;
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   margin-bottom: 25px;
-
-//   .logo-container {
-//     height: 100%;
-//     width: 70px;
-//     padding: 25px;
-//   }
-
-//   .options {
-//     width: 50%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-
-//     .option {
-//       padding: 10px 15px;
-//       cursor: pointer;
-//     }
-//   }
-// }
 .header {
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Centering items vertically */
   margin-bottom: 25px;
-  background-color: #ffffff; /* Adding background color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .logo-container {
-    height: 100%;
     width: 70px;
     display: flex;
     align-items: center;
-    padding: 0 20px; /* Adjusting padding for better alignment */
-    border-right: 1px solid #ddd; /* Adding border for visual separation */
+    padding: 0 20px;
+    border-right: 1px solid #ddd;
   }
 
   .options {
-    width: 50%;
-    height: 100%;
+    flex-grow: 1; /* Allowing options to grow and take up remaining space */
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .option {
-      padding: 10px 15px;
+      padding: 0 15px; /* Adjusted padding */
       cursor: pointer;
-      text-transform: uppercase; /* Uppercase option text */
-      font-weight: bold; /* Bold option text */
-      font-size: 14px; /* Adjusted font size for better readability */
-      color: #333; /* Changed text color */
-      transition: color 0.3s; /* Added transition for smoother color change on hover */
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+      transition: color 0.3s;
 
       &:hover {
-        color: #007bff; /* Changing text color on hover */
+        color: #007bff;
       }
 
       &:not(:last-child) {
-        margin-right: 20px; /* Adding margin between options */
+        margin-right: 20px;
       }
     }
   }
