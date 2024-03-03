@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 20px 60px;
 }
@@ -10,4 +10,25 @@ a{
 
 *{
     box-sizing: border-box;
-}
+} */
+body {
+    font-family: 'Open Sans', sans-serif; /* Updated font family for improved readability */
+    padding: 20px 60px;
+    background-color: #f9f9f9; /* Added a light background color for the body */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1e90ff; /* Changed link color to a more vibrant shade of blue */
+    transition: color 0.3s; /* Added transition for smoother color change on hover */
+  
+    &:hover {
+      color: #0056b3; /* Darker shade of blue on hover */
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  

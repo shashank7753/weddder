@@ -1,3 +1,46 @@
+// .checkout-page {
+//   width: 55%;
+//   min-height: 90vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: 50px auto 0;
+
+//   .checkout-header {
+//     width: 100%;
+//     padding: 10px 0;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid darkgrey;
+
+//     .header-block {
+//       text-transform: capitalize;
+//       width: 23%;
+
+//       &:last-child {
+//         width: 8%;
+//       }
+//     }
+//   }
+
+//   .total {
+//     margin-top: 30px;
+//     margin-left: auto;
+//     font-size: 36px;
+//   }
+
+//   button{
+//     margin-left:auto;
+//     margin-top: 50px;
+//   }
+
+//   .test-warning{
+//     text-align: center;
+//     margin-top: 40px;
+//     font-size: 24px;
+//     color:Red;
+//   }
+// }
 .checkout-page {
   width: 55%;
   min-height: 90vh;
@@ -5,6 +48,10 @@
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+  padding: 20px;
+  border: 1px solid #ddd; /* Adding border for visual separation */
+  border-radius: 8px; /* Adding border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
 
   .checkout-header {
     width: 100%;
@@ -26,18 +73,31 @@
   .total {
     margin-top: 30px;
     margin-left: auto;
-    font-size: 36px;
+    font-size: 24px; /* Reduced font size for better fit */
+    color: #333; /* Changed text color for better contrast */
   }
 
-  button{
-    margin-left:auto;
+  button {
     margin-top: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adding transition for smoother hover effect */
+
+    &:hover {
+      background-color: #0056b3; /* Darker background on hover */
+    }
   }
 
-  .test-warning{
+  .test-warning {
     text-align: center;
     margin-top: 40px;
-    font-size: 24px;
-    color:Red;
+    font-size: 18px; /* Reduced font size for better fit */
+    color: red; /* Changed text color for better visibility */
   }
 }
