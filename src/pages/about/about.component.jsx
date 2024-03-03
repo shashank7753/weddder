@@ -1,28 +1,12 @@
-// import React from "react";
-// import { Route } from 'react-router-dom';
-// import CollectionPage from '../collection/collection.component';
-// import CollectionOverview from '../../components/collection-overview/collection-overview.component';
-
-// const AboutPage= ({ match }) => {
-//      return (
-//        <div className="about-page">
-//         <h2>About Us</h2>
-//          <p>Welcome to our website! We are dedicated to providing...</p>
-//          <Route exact path={`${match.path}`} component={CollectionOverview} />
-//          <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
-//        </div>
-//      );
-// }
-
-// export default AboutPage;
 import React from "react";
 import { Route } from 'react-router-dom';
 import CollectionPage from '../collection/collection.component';
 import CollectionOverview from '../../components/collection-overview/collection-overview.component';
+import styles from './AboutPage.module.scss'; // Import the Sass module
 
 const AboutPage = ({ match }) => {
   return (
-    <div className="about-page">
+    <div className={styles.aboutPage}>
       <h2>About Photophenix</h2>
       <p>Welcome to Photophenix, your premier destination for exquisite photography experiences. We pride ourselves on being more than just a website - we are your gateway to capturing life's most cherished moments in stunning detail. Specializing in destination photoshoots for a myriad of occasions including weddings, corporate events, tourism ventures, and beyond, we bring forth a seamless fusion of artistry and professionalism.</p>
       <p>Our HTML-based platform serves as a digital canvas, meticulously designed to showcase the unparalleled beauty and diversity of our photography services. With a commitment to excellence ingrained in every pixel, we aim to transcend mere imagery, crafting timeless narratives that resonate with authenticity and passion.</p>
