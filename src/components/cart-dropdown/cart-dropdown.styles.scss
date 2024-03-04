@@ -1,43 +1,63 @@
 .cart-dropdown {
   position: absolute;
-  width: 240px;
-  height: 340px;
+  width: 300px;
+  max-height: 400px;
   padding: 20px;
-  border: 1px solid rgb(158, 17, 17);
-  background-color: white;
+  border: 1px solid #ddd;
+  background-color: #fff;
   top: 90px;
   right: 40px;
   z-index: 5;
   display: flex;
   flex-direction: column;
-  opacity: 0; /* Initially set to be invisible */
-  animation: fadeIn 0.5s ease forwards; /* Animation to fade in */
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px; /* Add some border radius */
+  overflow: hidden; /* Hide overflow content */
 }
+
+/* Additional styles for .cart-items and .empty-message */
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.empty-message {
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+  color: #888; /* Dim the color for empty message */
+}
+
+/* Button styles */
+
+button {
+  margin-top: 20px; /* Add some space between button and other elements */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Center the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation */
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px); /* Optional: Add a slight vertical offset */
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.cart-items {
-  height: 240px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.empty-message {
-  font-size: 18px;
-  margin: 50px auto;
-}
-
-button {
-  margin-top: auto;
 }
