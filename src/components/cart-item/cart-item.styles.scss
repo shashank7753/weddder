@@ -3,9 +3,13 @@
 //   display: flex;
 //   height: 80px;
 //   margin-bottom: 15px;
+//   border: 1px solid #ccc; /* Adding border for a visual separation */
+//   border-radius: 8px; /* Adding border radius for rounded corners */
+//   overflow: hidden; /* Hide overflow content */
 
 //   img {
 //     width: 30%;
+//     object-fit: cover; /* Ensuring images maintain aspect ratio */
 //   }
 
 //   .item-details {
@@ -18,6 +22,13 @@
 
 //     .name {
 //       font-size: 16px;
+//       font-weight: bold; /* Making the name bold for emphasis */
+//       margin-bottom: 5px;
+//     }
+
+//     .price {
+//       font-size: 14px; /* Adjusting price font size */
+//       color: #888; /* Changing price color for differentiation */
 //     }
 //   }
 // }
@@ -26,13 +37,15 @@
   display: flex;
   height: 80px;
   margin-bottom: 15px;
-  border: 1px solid #ccc; /* Adding border for a visual separation */
-  border-radius: 8px; /* Adding border radius for rounded corners */
-  overflow: hidden; /* Hide overflow content */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0; /* Initially set to be invisible */
+  animation: fadeIn 0.5s ease forwards; /* Animation to fade in */
 
   img {
     width: 30%;
-    object-fit: cover; /* Ensuring images maintain aspect ratio */
+    object-fit: cover;
   }
 
   .item-details {
@@ -45,13 +58,24 @@
 
     .name {
       font-size: 16px;
-      font-weight: bold; /* Making the name bold for emphasis */
+      font-weight: bold;
       margin-bottom: 5px;
     }
 
     .price {
-      font-size: 14px; /* Adjusting price font size */
-      color: #888; /* Changing price color for differentiation */
+      font-size: 14px;
+      color: #888;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Optional: Add a slight vertical offset */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -4,7 +4,19 @@
 //     justify-content: space-between;
 //     margin: 30px auto;
 // }
-.sign-in-and-sign-up {
+// .sign-in-and-sign-up {
+//     width: 850px;
+//     display: flex;
+//     justify-content: space-between;
+//     margin: 30px auto;
+//     padding: 20px; /* Adding padding for spacing */
+//     border-radius: 10px; /* Adding border radius for rounded corners */
+//     background-color: #f9f9f9; /* Adding a light background color */
+//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow for depth */
+//   }
+  
+  /* Further enhancements can be applied to specific elements within .sign-in-and-sign-up */
+  .sign-in-and-sign-up {
     width: 850px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +25,66 @@
     border-radius: 10px; /* Adding border radius for rounded corners */
     background-color: #f9f9f9; /* Adding a light background color */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow for depth */
-  }
-  
-  /* Further enhancements can be applied to specific elements within .sign-in-and-sign-up */
-  
+
+    .sign-in,
+    .sign-up {
+        flex: 1; /* Make sign-in and sign-up sections flexible */
+        padding: 20px; /* Add padding for spacing within sections */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px; /* Adding border radius for rounded corners */
+        background-color: #fff; /* White background color for sections */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow for depth */
+    }
+
+    .sign-in {
+        margin-right: 20px; /* Add margin between sign-in and sign-up sections */
+    }
+
+    .sign-up {
+        margin-left: 20px; /* Add margin between sign-in and sign-up sections */
+    }
+
+    h2 {
+        margin-bottom: 20px; /* Add margin below section titles */
+        font-size: 24px; /* Increase font size for section titles */
+        font-weight: bold; /* Bold font weight for emphasis */
+        color: #333; /* Darker text color for better contrast */
+    }
+
+    p {
+        margin-bottom: 15px; /* Add margin below paragraphs */
+        font-size: 16px; /* Increase font size for paragraphs */
+        color: #666; /* Text color for paragraphs */
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Add margin above buttons */
+        
+        button {
+            margin: 0 10px; /* Add margin between buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            font-size: 16px; /* Increase font size */
+            font-weight: bold; /* Bold font weight */
+            color: #fff; /* White text color */
+            background-color: #007bff; /* Blue background color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Apply border radius */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for background color */
+
+            &:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+
+            &:focus {
+                outline: none; /* Remove focus outline */
+            }
+        }
+    }
+}

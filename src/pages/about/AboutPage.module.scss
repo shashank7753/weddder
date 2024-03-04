@@ -1,108 +1,91 @@
-/* AboutPage.module.scss */
 
-.aboutPage {
+  // AboutPage.module.scss
+
+// .about-page {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     padding: 20px;
+//     font-family: Arial, sans-serif;
+//     background-color: #806d6d; /* Light gray background color */
+//     border-radius: 10px; /* Rounded corners */
+  
+//     h2 {
+//       font-size: 28px; /* Increased font size */
+//       color: #333;
+//       margin-bottom: 30px; /* Increased margin */
+//       text-align: center;
+//     }
+    
+//     p {
+//       font-size: 18px; /* Increased font size */
+//       line-height: 1.8; /* Increased line height */
+//       color: #444; /* Darker text color */
+//       margin-bottom: 20px; /* Increased margin */
+//     }
+    
+//     ul {
+//       list-style: none;
+//       padding: 0;
+      
+//       li {
+//         margin-bottom: 15px; /* Increased margin */
+        
+//         strong {
+//           font-weight: bold;
+//         }
+//       }
+//     }
+//   }
+  // AboutPage.module.scss
+
+.about-page {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    position: relative; /* To position the overlay */
-    // background: url('path/to/background-image.jpg') no-repeat center center;
-    background-size: cover;
-    color: #d9d3d3; /* Text color for better contrast */
-    opacity: 0; /* Initially set to be invisible */
-    animation: fadeIn 1s ease-in-out forwards; /* Animation to fade in */
-  }
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade in animation */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
   
-  /* Overlay to improve readability */
-  .aboutPage::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(2, 1, 19, 0.733); /* Semi-transparent black overlay */
-  }
-  
-  .aboutPage h2,
-  .aboutPage p,
-  .aboutPage ul,
-  .aboutPage li {
-    animation: slideIn 0.5s ease-in-out forwards; /* Animation to slide in */
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .aboutPage h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .aboutPage p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  .aboutPage ul {
-    margin-top: 15px;
-    padding-left: 20px;
-  }
-  
-  .aboutPage li {
-    margin-bottom: 10px;
-  }
-  
-  .aboutPage strong {
-    font-weight: bold;
-  }
-  
-  /* Links */
-  .aboutPage a {
-    color: #007bff;
-    text-decoration: underline;
-  }
-  
-  /* List styles */
-  .aboutPage li {
-    list-style: none;
-  }
-  
-  /* Styling for the routes */
-//   .aboutPage .route {
-//     /* Add styles for the routes if necessary */
-//   }
-  
-  /* Media queries for responsiveness */
-  @media screen and (max-width: 600px) {
-    .aboutPage {
-      padding: 10px;
+    h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+      text-align: center;
     }
     
-    .aboutPage h2 {
-      font-size: 20px;
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
     }
     
-    .aboutPage p {
-      font-size: 14px;
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin-bottom: 15px;
+        
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  
+    &:hover {
+      background-color: #eaeaea; /* Lighter background color on hover */
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
   

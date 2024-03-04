@@ -1,43 +1,75 @@
 .header {
-  height: 70px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centering items vertically */
+  align-items: center;
+  height: 70px;
+  width: 100%;
   margin-bottom: 25px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #c4b6b6ed;
+  box-shadow: 0 2px 4px rgba(34, 33, 33, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 
   .logo-container {
-    width: 70px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    border-right: 1px solid #ddd;
+    margin-left: 20px; // Adjust margin as needed
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    animation: fadeInLeft 0.5s ease-in-out; // Animation for the website name
+  }
+
+  .website-name {
+    margin-left: 10px; // Adjust margin as needed
+    animation: slideInLeft 0.5s ease-in-out; // Animation for the website name
   }
 
   .options {
-    flex-grow: 1; /* Allowing options to grow and take up remaining space */
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .option {
-      padding: 0 15px; /* Adjusted padding */
+      padding: 0 15px;
       cursor: pointer;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 14px;
-      color: #333;
+      color: #050505;
       transition: color 0.3s;
 
       &:hover {
-        color: #007bff;
+        color: #000000;
       }
 
       &:not(:last-child) {
         margin-right: 20px;
       }
     }
+  }
+}
+
+// Animation for the website name to fade in from left
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Animation for the website name to slide in from left
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

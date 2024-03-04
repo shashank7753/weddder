@@ -1,0 +1,15 @@
+.stripe-button {
+    background-color: #9ea4aa; /* Button background color */
+    color: #908383; /* Button text color */
+    font-size: 16px; /* Button font size */
+    font-weight: bold; /* Button font weight */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Apply border radius */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+
+    &:hover {
+        background-color: #0d3056; /* Darker blue on hover */
+    }
+}

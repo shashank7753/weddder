@@ -1,14 +1,57 @@
-.sign-in{
-    width:380px;
-    display:flex;
-    flex-direction: column;
+// .sign-in{
+//     width:380px;
+//     display:flex;
+//     flex-direction: column;
 
-    .title{
-        margin:10px 0;
+//     .title{
+//         margin:10px 0;
+//     }
+
+//     .buttons{
+//         display: flex;
+//         justify-content: space-between;
+//     }    
+// }
+.sign-in {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Add some padding for spacing */
+
+    .title {
+        margin: 20px 0; /* Increased top and bottom margin */
+        font-size: 24px; /* Larger font size for better emphasis */
+        font-weight: bold; /* Bold font weight for emphasis */
+        color: #333; /* Darker text color for better contrast */
     }
 
-    .buttons{
+    .buttons {
+        width: 100%; /* Ensure buttons take full width */
         display: flex;
         justify-content: space-between;
-    }    
+        margin-top: 20px; /* Add some spacing between title and buttons */
+        
+        button {
+            flex: 1; /* Make buttons flexible to distribute space */
+            margin: 0 10px; /* Add margin between buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            font-size: 16px; /* Increase font size */
+            font-weight: bold; /* Bold font weight */
+            color: #fff; /* White text color */
+            background-color: #007bff; /* Blue background color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Apply border radius */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for background color */
+
+            &:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+
+            &:focus {
+                outline: none; /* Remove focus outline */
+            }
+        }
+    }
 }

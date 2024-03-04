@@ -1,9 +1,77 @@
-.sign-up{
+// .sign-up{
+//     display: flex;
+//     flex-direction: column;
+//     width:380px;
+
+//     .title {
+//         margin:10px 0;
+//     }
+// }
+.sign-up {
     display: flex;
     flex-direction: column;
-    width:380px;
+    width: 380px;
+    padding: 20px; /* Add padding for spacing */
 
     .title {
-        margin:10px 0;
+        margin: 20px 0; /* Increased top and bottom margin */
+        font-size: 24px; /* Larger font size for better emphasis */
+        font-weight: bold; /* Bold font weight for emphasis */
+        color: #333; /* Darker text color for better contrast */
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px; /* Add margin between inputs and buttons */
+        
+        label {
+            margin-bottom: 8px; /* Add margin below labels */
+            font-size: 16px; /* Increase font size */
+            font-weight: bold; /* Bold font weight */
+            color: #555; /* Slightly darker text color */
+        }
+
+        input {
+            padding: 10px; /* Add padding to inputs */
+            margin-bottom: 16px; /* Add margin between inputs */
+            font-size: 16px; /* Increase font size */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Apply border radius */
+            transition: border-color 0.3s; /* Smooth transition for border color */
+
+            &:focus {
+                outline: none; /* Remove focus outline */
+                border-color: #007bff; /* Change border color on focus */
+            }
+        }
+    }
+
+    .buttons {
+        width: 100%; /* Ensure buttons take full width */
+        display: flex;
+        justify-content: space-between;
+        
+        button {
+            flex: 1; /* Make buttons flexible to distribute space */
+            margin: 0 10px; /* Add margin between buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            font-size: 16px; /* Increase font size */
+            font-weight: bold; /* Bold font weight */
+            color: #fff; /* White text color */
+            background-color: #007bff; /* Blue background color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Apply border radius */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition for background color */
+
+            &:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+
+            &:focus {
+                outline: none; /* Remove focus outline */
+            }
+        }
     }
 }

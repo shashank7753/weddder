@@ -1,14 +1,11 @@
-import React from "react";
-import { Route } from 'react-router-dom';
-import CollectionPage from '../collection/collection.component';
-import CollectionOverview from '../../components/collection-overview/collection-overview.component';
-import styles from './AboutPage.module.scss'; // Import the Sass module
+import React from 'react';
+import styles from "./AboutPage.module.scss";
 
-const AboutPage = ({ match }) => {
+function Photophenix() {
   return (
-    <div className={styles.aboutPage}>
-      <h2>About Photophenix</h2>
-      <p>Welcome to Photophenix, your premier destination for exquisite photography experiences. We pride ourselves on being more than just a website - we are your gateway to capturing life's most cherished moments in stunning detail. Specializing in destination photoshoots for a myriad of occasions including weddings, corporate events, tourism ventures, and beyond, we bring forth a seamless fusion of artistry and professionalism.</p>
+    <div className={styles["about-page"]}>
+      <h2>Welcome to Photophenix: Your Premier Destination for Exquisite Photography Experiences</h2>
+      <p>At Photophenix, we pride ourselves on being more than just a website - we are your gateway to capturing life's most cherished moments in stunning detail. Specializing in destination photoshoots for a myriad of occasions including weddings, corporate events, tourism ventures, and beyond, we bring forth a seamless fusion of artistry and professionalism.</p>
       <p>Our HTML-based platform serves as a digital canvas, meticulously designed to showcase the unparalleled beauty and diversity of our photography services. With a commitment to excellence ingrained in every pixel, we aim to transcend mere imagery, crafting timeless narratives that resonate with authenticity and passion.</p>
       <p>Whether you're exchanging vows against a breathtaking sunset backdrop, orchestrating a corporate retreat amidst nature's grandeur, or seeking to immortalize the essence of a tourist hotspot, Photophenix stands ready to turn your vision into reality.</p>
       <p><strong>Why choose Photophenix?</strong></p>
@@ -19,11 +16,8 @@ const AboutPage = ({ match }) => {
         <li><strong>Seamless Booking:</strong> Our user-friendly interface simplifies the booking process, allowing you to reserve your photoshoot with ease and convenience.</li>
       </ul>
       <p>Join us at Photophenix and embark on a journey where every click encapsulates the magic of the moment. Let us transform your dreams into tangible memories, one frame at a time.</p>
-      {/* Assuming CollectionOverview and CollectionPage components are used for other purposes */}
-      <Route exact path={`${match.path}`} component={CollectionOverview} />
-      <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
     </div>
   );
 }
 
-export default AboutPage;
+export default Photophenix;
