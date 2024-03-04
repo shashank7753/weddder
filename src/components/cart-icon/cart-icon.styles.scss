@@ -6,12 +6,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-radius: 50%; /* Adding border radius for a circular shape */
-  background-color: #f8f9fa; /* Adding background color */
-  transition: background-color 0.3s ease; /* Adding transition for hover effect */
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for background color and transform */
+  animation: bounce 0.5s infinite alternate; /* Adding animation for a subtle bouncing effect */
 
   &:hover {
-    background-color: #e9ecef; /* Changing background color on hover */
+    background-color: #e9ecef;
   }
 
   .shopping-icon {
@@ -21,13 +22,22 @@
 
   .item-count {
     position: absolute;
-    font-size: 12px; /* Adjusting font size */
+    font-size: 12px;
     font-weight: bold;
-    bottom: 8px; /* Adjusting bottom position */
-    right: 8px; /* Adjusting right position */
-    background-color: #007bff; /* Adding background color for item count */
-    color: #fff; /* Changing text color */
-    padding: 4px; /* Adding padding */
-    border-radius: 50%; /* Making item count circle */
+    bottom: 8px;
+    right: 8px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
   }
 }
