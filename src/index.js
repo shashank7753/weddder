@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import './index.css';
 import App from './App';
 import {store,persistor} from "./redux/store";
+// import {} from "googlemaps";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -17,3 +18,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+
+
