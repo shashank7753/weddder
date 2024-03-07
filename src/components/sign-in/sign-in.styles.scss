@@ -9,7 +9,7 @@
         margin: 20px 0; /* Increased top and bottom margin */
         font-size: 24px; /* Larger font size for better emphasis */
         font-weight: bold; /* Bold font weight for emphasis */
-        color: #333; /* Darker text color for better contrast */
+        color: #1e0f0f; /* Darker text color for better contrast */
     }
 
     .buttons {
@@ -25,14 +25,14 @@
             font-size: 16px; /* Increase font size */
             font-weight: bold; /* Bold font weight */
             color: #fff; /* White text color */
-            background-color: #007bff; /* Blue background color */
+            background-color: #020910; /* Blue background color */
             border: none; /* Remove border */
             border-radius: 5px; /* Apply border radius */
             cursor: pointer;
             transition: background-color 0.3s; /* Smooth transition for background color */
 
             &:hover {
-                background-color: #0056b3; /* Darker blue on hover */
+                background-color: #505861; /* Darker blue on hover */
             }
 
             &:focus {

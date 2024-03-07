@@ -18,7 +18,7 @@ const Header = ({ currentUser, hidden }) => {
                     <Logo className="logo" />
                 </Link>
                 <div className='website-name'>
-                    <Link to="/" className='website-name-link'>PhotoPhenix</Link>
+                    <Link to="/" className='website-name-link'>PHOTOPHENIX</Link>
                 </div>
             </div>
             <div className="options">
@@ -34,6 +34,10 @@ const Header = ({ currentUser, hidden }) => {
                 </Link>
                 <Link className="option" to='/about'>
                     ABOUT
+                </Link>
+
+                <Link className="option" to='/about'>
+                    User
                 </Link>
                 
                 
