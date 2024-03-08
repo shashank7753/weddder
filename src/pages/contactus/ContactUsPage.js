@@ -1,17 +1,3 @@
-// // ContactUsPage.js
-
-// import React from 'react';
-
-// const ContactUsPage = () => (
-//   <div>
-//     <h2>Contact Us</h2>
-//     <p>Contact information goes here...</p>
-//   </div>
-// );
-
-// export default ContactUsPage;
-// ContactUsPage.js
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';

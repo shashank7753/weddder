@@ -36,7 +36,7 @@ const Header = ({ currentUser, hidden }) => {
                     ABOUT
                 </Link>
 
-                <Link className="option" to='/about'>
+                <Link className="option" to='/user'>
                     User
                 </Link>
                 
